@@ -21,7 +21,9 @@ body {
 }
 
 h1,
-h2,
+header h2{
+  align-items: start;
+}
 h3,
 h4,
 h5,
@@ -44,6 +46,7 @@ header {
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
+/* This is the Lernantion header */
 header h1 {
   color: var(--tertiary);
   background-color: var(--secondary);
@@ -53,10 +56,13 @@ header h1 {
   line-height: 1;
 }
 
-nav {
+div nav ul{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 nav a {
@@ -78,7 +84,7 @@ nav a:hover {
 }
 
 nav a:last-child {
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 main {
@@ -88,7 +94,7 @@ main {
 
 .hero-banner {
   background: rgb(68, 88, 120);
-  background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwF_Ie0lBM6riEtUDbF24DZWv9WcZTxFk48wBcJwooCcruhDsSm3ZQEqcU0VPBIyW4sk&usqp=CAU"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
